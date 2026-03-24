@@ -87,7 +87,7 @@ Required files:
 
 ## 📁 Project Structure
 
-
+```
 scrna/
 ├── scripts/
 │ └── pbmc3k_seurat.R
@@ -99,7 +99,7 @@ scrna/
 │ ├── pbmc3k_markers.csv
 │ └── pbmc3k_seurat_object.rds
 ├── README.md
-
+```
 
 ---
 
