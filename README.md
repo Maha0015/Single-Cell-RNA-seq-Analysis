@@ -104,6 +104,6 @@ scrna/
 ---
 
 ## ▶️ Run
-
-
+```
 Rscript scripts/pbmc3k_seurat.R
+```
