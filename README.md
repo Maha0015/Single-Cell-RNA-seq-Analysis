@@ -107,12 +107,12 @@ scrna/
 ├── scripts/
 │   └── pbmc3k_seurat.R
 ├── results/
-│ ├── qc_violin.png
-│ ├── umap_clusters.png
-│ ├── umap_annotated.png
-│ ├── featureplot_markers.png
-│ ├── pbmc3k_markers.csv
-│ └── pbmc3k_seurat_object.rds
+│   ├── qc_violin.png
+│   ├── umap_clusters.png
+│   ├── umap_annotated.png
+│   ├── featureplot_markers.png
+│   ├── pbmc3k_markers.csv
+│   └── pbmc3k_seurat_object.rds
 ├── README.md
 ```
 ## 🛠️ Requirements
