@@ -67,5 +67,30 @@ This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analy
 ![FeaturePlot](results/featureplot_validation.png)
 
 ---
+The dataset can be downloaded from:
+https://www.10xgenomics.com/datasets
 
+Example dataset used:
+PBMC 5k dataset (10x Genomics)
+
+After downloading, place the files in:
+data/pbmc/
+
+Required files:
+- barcodes.tsv.gz
+- features.tsv.gz
+- matrix.mtx.gz
+- 
 ## 📁 Project Structure
+scrna/
+├── scripts/
+│ └── pbmc3k_seurat.R
+├── results/
+│ ├── qc_violin.png
+│ ├── elbow_plot.png
+│ ├── umap_clusters.png
+│ ├── umap_annotated.png
+│ ├── featureplot_validation.png
+│ ├── pbmc3k_markers.csv
+│ └── pbmc3k_seurat_object.rds
+├── README.md
