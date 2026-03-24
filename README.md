@@ -1,14 +1,14 @@
 # 🧬 Single-Cell RNA-seq Analysis of PBMC Immune Cells (Seurat)
 
-This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analysis of human peripheral blood mononuclear cells (PBMCs) using the Seurat framework in R. The workflow includes quality control, normalization, dimensionality reduction, clustering, and cell-type annotation.
+This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analysis of human peripheral blood mononuclear cells (PBMCs) using the Seurat framework in R. The workflow includes quality control, normalization, dimensionality reduction, clustering, and biological cell-type annotation.
 
 ---
 
 ## 🚀 Overview
 
-- **Dataset:** 10x Genomics PBMC (~5K cells)
-- **Goal:** Identify and annotate immune cell populations
-- **Tools:** R, Seurat, dplyr, ggplot2
+- **Dataset:** 10x Genomics PBMC (~5K cells)  
+- **Goal:** Identify and annotate immune cell populations  
+- **Tools:** R, Seurat, dplyr, ggplot2  
 
 ---
 
@@ -18,10 +18,10 @@ This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analy
 - Imported 10x Genomics feature-barcode matrix using `Read10X()`
 
 ### 2. Quality Control
-- Filtered cells based on:
-  - Gene count (`nFeature_RNA`)
-  - UMI count (`nCount_RNA`)
-  - Mitochondrial percentage (`percent.mt`)
+Filtered cells based on:
+- Gene count (`nFeature_RNA`)
+- UMI count (`nCount_RNA`)
+- Mitochondrial percentage (`percent.mt`)
 
 ### 3. Preprocessing
 - Normalization (`NormalizeData`)
@@ -43,12 +43,13 @@ This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analy
 - Differential expression analysis using `FindAllMarkers`
 
 ### 8. Cell-Type Annotation
-- Annotated clusters using canonical marker genes:
-  - **T cells:** CD3D, GATA3
-  - **B cells:** MS4A1, IGHD
-  - **NK cells:** NKG7, KLRF1
-  - **Monocytes:** LYZ, FCGR3A, CD14
-- Some clusters were provisionally labeled due to non-canonical marker profiles.
+Annotated clusters using canonical marker genes:
+- **T cells:** CD3D, GATA3  
+- **B cells:** MS4A1, IGHD  
+- **NK cells:** NKG7, KLRF1  
+- **Monocytes:** LYZ, FCGR3A, CD14  
+
+Some clusters were provisionally labeled due to non-canonical marker profiles.
 
 ---
 
@@ -64,33 +65,17 @@ This project performs an end-to-end single-cell RNA sequencing (scRNA-seq) analy
 ![Annotated UMAP](results/umap_annotated.png)
 
 ### 🔹 Marker Gene Expression
-![FeaturePlot](results/featureplot_validation.png)
+![FeaturePlot](results/featureplot_markers.png)
 
 ---
-The dataset can be downloaded from:
-https://www.10xgenomics.com/datasets
 
-Example dataset used:
-PBMC 5k dataset (10x Genomics)
+## 📦 Data Availability
+
+Due to file size limitations, raw data is not included in this repository.
+
+The dataset can be downloaded from:  
+https://www.10xgenomics.com/datasets  
+
+**Dataset used:** PBMC 5k dataset (10x Genomics)
 
 After downloading, place the files in:
-data/pbmc/
-
-Required files:
-- barcodes.tsv.gz
-- features.tsv.gz
-- matrix.mtx.gz
-  
-## 📁 Project Structure
-scrna/
-├── scripts/
-│ └── pbmc3k_seurat.R
-├── results/
-│ ├── qc_violin.png
-│ ├── elbow_plot.png
-│ ├── umap_clusters.png
-│ ├── umap_annotated.png
-│ ├── featureplot_validation.png
-│ ├── pbmc3k_markers.csv
-│ └── pbmc3k_seurat_object.rds
-├── README.md
