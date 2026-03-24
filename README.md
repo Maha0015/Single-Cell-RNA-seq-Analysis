@@ -76,11 +76,11 @@ Clustering of PBMC cells revealed distinct immune cell populations that align wi
 - **Monocytes (Cluster 7):** High LYZ, FCGR3A, and CD14 expression consistent with myeloid lineage cells.
 - **Erythroid-like cells (Cluster 3):** Expression of hemoglobin-related genes (e.g., HBD, HBM) suggests erythroid contamination or rare circulating precursors.
 
----
 Some clusters showed less distinct marker profiles and were labeled as “Unassigned,” indicating potential mixed populations or lower-quality cells.
+
 Overall, the clustering and marker expression patterns are consistent with known PBMC cell-type composition, validating the robustness of the analysis pipeline.
+
 This demonstrates the ability to integrate computational analysis with biological interpretation for downstream hypothesis generation.
----
 
 ## 📦 Data
 
