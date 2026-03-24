@@ -80,7 +80,7 @@ Required files:
 - barcodes.tsv.gz
 - features.tsv.gz
 - matrix.mtx.gz
-- 
+  
 ## 📁 Project Structure
 scrna/
 ├── scripts/
